@@ -1,0 +1,116 @@
+@media(max-width:768px){
+     nav img{
+          width: 60px;
+          margin-top: 8px;
+     }
+     .text_box h1{
+          font-size: 30px;
+          line-height: 1.5em;
+     }
+     nav{
+          height: 50px;
+          background: rgba(236, 240, 241, .7);
+     }
+     .nav_links ul li{
+          display: block;
+          margin: 15px 10px;
+     }
+     .nav_links ul li a{
+          color: #fff;
+     }
+     .nav_links{
+          position: fixed;
+          width: 200px;
+          height: 100vh;
+          background: #444;
+          top: 0;
+          right: -200px;
+          text-align: left;
+          transition: all 1s;
+     }
+     nav #menu{
+          display: block;
+     }
+     nav .xmark{
+          display: block;
+          color: #fff;
+          font-size: 22px;
+          margin: 17px 20px;
+          cursor: pointer;
+     }
+     nav .bar{
+          display: block;
+          color: #444;
+          font-size: 22px;
+          margin: 17px 10px;
+          cursor: pointer;
+     }
+     .nav_links ul{
+          margin: 24px;
+     }
+     .shape {
+          height: 9.8rem;
+          bottom: -8rem;
+          z-index: -1;
+      }
+     .row{
+          display: flex;
+          flex-flow: column;
+     }
+     .teacher p{
+          width: auto;
+     }
+
+     /*========================================== 
+                    Contact Area Responsive
+     ===============================================*/
+     .sub_header h1{
+          padding-top: 50%;
+          font-size: 34px;
+     }
+     .contact_section{
+          width: 90%;
+          margin: auto;
+     }
+     .contact_col div .fa-solid{
+          font-size: 25px;
+          margin: 10px;
+          margin-right: 15px;
+     } 
+     .contact_col div p{
+          font-size: 16px;
+     }
+     .contact_col div h5{
+          color: #333;
+          font-size: 18px;
+          margin-bottom: 2px;
+          font-weight: 600;
+     }
+     .contact_col input, .contact_col textarea{
+          font-size: 20px;
+     }
+     .contact_col .hero_btn {
+          margin-top: 10px;
+          margin-left: 9%;
+          width: 80%;
+      }
+      /*========================================== 
+                    About Area Responsive 
+     ===============================================*/
+      .about_us_image img {
+          width: 100%;
+      }
+      .about_us_image2 img{
+          width: 100%;
+     }
+     .facilities_col{
+          margin: 15px 0;
+     }
+      /*========================================== 
+                    Gallery Area Responsive
+     ===============================================*/
+      .container .popup_image img{
+          width: 85%;
+      }
+      
+}

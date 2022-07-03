@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required Meta Tag -->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Gallery</title>
+
+     <!-- Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+     <!-- Font Awesome CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <!-- CSS File -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Responsive CSS File -->
+     <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div id="gallery"></div>
+     <!-- Header Area -->
+     <div  id="about"></div>
+     <section id="home" class="sub_header">
+          <nav>
+               <a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
+               <div class="nav_links" id="navLinks">
+                    <i id="menu" class="fa-solid fa-xmark xmark" onclick="hideMenu()"></i>
+                    <ul>
+                         <li><a href="index.html" class="active">Home</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="teacher.html">Teachers</a></li>
+                         <li><a href="#gallery">Gallery</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                    </ul>
+               </div>
+               <i id="menu" class="fa-solid fa-bars bar" onclick="showMenu()"></i>
+          </nav>
+          <h1 class="letter">Gallery </h1>
+     </section>
+
+     <!-- Gallery Section -->
+     <div class="container">
+          <div class="gallery_header">Welcome To Our Happy Family</div>
+          <div class="image_container">
+               <div class="image"><img src="images/gallery/1.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/2.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/3.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/4.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/15.png" alt=""></div>
+               <div class="image"><img src="images/gallery/5.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/6.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/7.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/8.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/9.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/10.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/11.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/12.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/13.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/14.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/15.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/16.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/17.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/18.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/19.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/20.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/21.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/22.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/23.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/24.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/25.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/26.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/27.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/28.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/29.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/30.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/31.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/32.jpg" alt=""></div>
+               <div class="image"><img src="images/gallery/33.jpg" alt=""></div>
+
+          </div>
+          <div class="popup_image">
+               <span>&times;</span>
+               <img src="img/img1.jpg" alt="">
+         </div>
+     </div>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Area -->
+     <section class="footer_area">
+          <h3>all riight reserved<sup>@</sup></h3>
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- JQuery -->
+     <script> 
+          var navLinks = document.getElementById("navLinks");
+
+          function showMenu(){
+               navLinks.style.right = "0";
+          };
+          function hideMenu(){
+               navLinks.style.right = "-200px";
+          };
+     </script>
+     <script>
+          document.querySelectorAll('.image_container img').forEach(image =>{
+             image.onclick = () =>{
+                 
+              document.querySelector('.popup_image').style.display = 'block';
+                 document.querySelector('.popup_image img').src = image.getAttribute('src');
+             
+             }
+          });
+          document.querySelector('.popup_image span').onclick = () =>{
+              document.querySelector('.popup_image').style.display = 'none';
+          };
+      </script> 
+</body>
+</html>

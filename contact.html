@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required Meta Tag -->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Contact Us</title>
+
+     <!-- Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+     <!-- Font Awesome CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <!-- CSS File -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Responsive CSS File -->
+     <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+     <!-- Header Area -->
+     <section id="home" class="sub_header_contact">
+          <nav>
+               <a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
+               <div class="nav_links" id="navLinks">
+                    <i id="menu" class="fa-solid fa-xmark xmark" onclick="hideMenu()"></i>
+                    <ul>
+                         <li><a href="index.html" class="active">Home</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="teacher.html">Teachers</a></li>
+                         <li><a href="gallery.html">Gallery</a></li>                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+               </div>
+               <i id="menu" class="fa-solid fa-bars bar" onclick="showMenu()"></i>
+          </nav>
+          <h1 id="contact">Contact US</h1>
+     </section>
+
+
+
+
+     
+
+<!-- Location -->
+     <section class="location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2908038096757!2d90.44460261434743!3d23.701307096568293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9d9be737fdf%3A0xef7fb4c3994262ae!2s536%20Dhonia%20-%20Dholaipar%20Rd%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1650194326851!5m2!1sen!2sbd" width="600" height="450" style="border:0;" ></iframe>
+     </section>
+
+    
+     <section class="contact_section">
+          <div class="row">
+               <div class="contact_col">
+                    <div>
+                         <i class="fa-solid fa-location-dot"></i>
+                         <span>
+                              <h5>536-554 Dhonia</h5>
+                              <p>Dholaipar Rd, Dhaka</p>
+                         </span>
+                    </div>
+                    <div>
+                         <i class="fa-solid fa-phone"></i>
+                         <span>
+                              <h5>01833-448789</h5>
+                              <p>9:00am to 2:00pm<br> Closed on Friday and Sataurday</p>
+                         </span>
+                    </div>
+                    <div>
+                         <i class="fa-solid fa-envelope"></i>
+                         <span>
+                              <h5>paradigmschool.bd@gmail.com</h5>
+                              <p>Email Us Your Query</p>
+                         </span>
+                    </div>
+               </div>
+               <div class="contact_col">
+                    <form action="form_handelar.php">
+                         <input class="form-control" type="text" placeholder="Enter your Name" required>
+                         <input type="email" placeholder="Enter your email" required>
+                         <input type="text" placeholder="Enter your subject" >
+                         <textarea rows="8" placeholder="Meassage" ></textarea>
+                         <button type="button" class="hero_btn">Contact</button>
+                    </form>
+               </div>
+          </div>
+     </section>
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Area -->
+     <section class="footer_area">
+          <h3>all riight reserved<sup>@</sup></h3>
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- JQuery -->
+     <script> 
+          var navLinks = document.getElementById("navLinks");
+
+          function showMenu(){
+               navLinks.style.right = "0";
+          };
+          function hideMenu(){
+               navLinks.style.right = "-200px";
+          };
+     </script>
+
+</body>
+</html>

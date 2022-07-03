@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required Meta Tag -->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Paradigm School</title>
+
+     <!-- Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+     <!-- Font Awesome CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <!-- OwlCarousel CDN CSS Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <!-- bx slider CSS File-->
+     <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+     
+     <!-- CSS File -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Responsive CSS File -->
+     <link rel="stylesheet" href="responsive.css">
+     
+</head>
+<body>
+     <!-- Header Area -->
+     <section id="home" class="header">
+          <nav>
+               <a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
+               <div class="nav_links" id="navLinks">
+                    <i id="menu" class="fa-solid fa-xmark xmark" onclick="hideMenu()"></i>
+                    <ul>
+                         <li><a href="#home" >Home</a></li>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#teacher">Teachers</a></li>
+                         <li><a href="#gallery">Gallery</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+               </div>
+               <i id="menu" class="fa-solid fa-bars bar" onclick="showMenu()"></i>
+          </nav>
+     </section>
+     <!-- Header Area Content-->
+     <section class="section">
+          <div class="text_box">
+               <h1>Learn More With Paradigm</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quasi ad at doloremque asperiores <br>perferendis molestiae dicta facilis laborum deserunt.</p>
+               <a class="hero_btn" href="">Read More</a>
+               <div class="shape"></div>
+          </div>
+          
+     </section>
+     
+     
+
+     <!-- About Section -->
+     <section id="about" class="about_us">
+          <h1>About Us</h1>
+          <div class="row">
+               <div class="about_col">
+                    <img src="images/gallery/School Photo Edit 21.png" alt="">
+               </div>
+               <div class="about_col">
+                    <h2>Why Choose Us</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, obcaecati enim! Quas reiciendis quasi iste quos recusandae cum est aliquam odio ipsum sapiente minima, accusamus qui dignissimos natus vitae rerum neque quam provident perspiciatis non repellendus accusantium fuga explicabo? Vel architecto ratione aspernatur dicta incidunt quod maxime obcaecati odio voluptas.</p>
+                    <a class="hero_btn" href="about.html">Read More</a>
+               </div>
+               
+          </div>
+     </section>
+     
+     <!-- Teacher Section -->
+     <section class="teacher" id="teacher">
+                    <h1>Our Expert Teachers</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis asperiores incidunt ex ut?<br> Amet laboriosam quis facere. Ex, nesciunt! Harum?</p>
+                    <a href="teacher.html" class="hero_btn">Read More</a>
+     </section> 
+<!-- Gallery Slider Section -->
+<div id="gallery" class="gallery">
+     <div class="gallery_header_homepage">Gallery</div>
+     <div class="gallery_container">
+          <div class="image"><img src="images/006.png" alt=""></div>
+          <div class="image"><img src="images/002.png" alt=""></div>
+          <div class="image"><img src="images/003.png" alt=""></div>
+          <div class="image"><img src="images/004.png" alt=""></div>
+          <div class="image"><img src="images/005.png" alt=""></div>
+          <div class="image"><img src="images/001.png" alt=""></div>
+     </div>
+     <div class="galllery_content">
+          <a href="gallery.html" class="hero_btn">Show More</a>
+     </div>
+     <div class="popup_image">
+          <span>&times;</span>
+          <img src="img/img1.jpg" alt="">
+    </div>
+</div>    
+          
+
+
+     <!-- Call to Action -->
+     <section id="contact" class="cta">
+               <h1>Enroll For Our Various Online Courses</h1>
+               <a class="hero_btn red_btn" href="contact.html">Contact US</a>
+     </section>
+
+<!-- Footer Area -->
+     <section class="footer_area">
+          <h3>all riight reserved<sup>@</sup></h3>
+     </section>
+
+
+
+
+
+     
+     
+     <!-- JQuery CDN Link -->
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <script src="js/main.js"></script>
+     <script>
+          document.querySelectorAll('.gallery_container img').forEach(image =>{
+             image.onclick = () =>{
+                 
+              document.querySelector('.popup_image').style.display = 'block';
+                 document.querySelector('.popup_image img').src = image.getAttribute('src');
+             
+             }
+          });
+          document.querySelector('.popup_image span').onclick = () =>{
+              document.querySelector('.popup_image').style.display = 'none';
+          };
+      </script> 
+     
+</body>
+</html>

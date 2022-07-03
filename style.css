@@ -1,0 +1,580 @@
+/*============================================
+               Common CSS 
+==============================================*/
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     scroll-behavior: smooth;
+     transition: all .2s linear;
+}
+*::selection{
+     color: #fff;
+     background: rgb(8, 231, 45);
+}
+html::-webkit-scrollbar{
+     width: 15px;
+}
+html::-webkit-scrollbar-track{
+     background: #444;
+}
+
+html::-webkit-scrollbar-thumb{
+     background: rgb(160, 161, 160);
+}
+
+/*======================================================= 
+               Button Coustomaization
+=========================================================*/
+.hero_btn{
+     display: inline-block;
+     text-decoration: none;
+     color: #262626;
+     font-size: 18px;
+     border: 2px solid #262626;
+     padding: 10px 20px;
+     background: transparent;
+     cursor: pointer;
+     transition: all .2s linear;
+     border-radius: 10px;
+     box-shadow: 0.5rem .6rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.hero_btn:hover{
+     color:  #fff;
+     background: #262626;
+     box-shadow: none;
+}
+.header .nav_links ul li a:hover{
+     color: rgb(8, 231, 45);
+}
+/*=================================================
+                  Header Area
+==================================================*/
+.header{
+     width: 100%;
+     height: 100vh;
+     background-image:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(images/home-bg.jpg) ;
+     background-position: center;
+     background-size: cover;
+     
+}
+nav{
+     width: 90%;
+     height: 18px;
+     background: rgba(236, 240, 241, .7);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2% 6%;
+     box-shadow: 0 .1rem 0.3rem rgba(0, 0, 0, 0.3);
+     position: fixed;
+     z-index: 1000;
+}
+nav img{
+     width: 80px;
+}
+.nav_links{
+     flex: 1;
+     text-align: right;
+}
+.nav_links ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 12px;
+     position: relative;
+}
+.nav_links ul li a{
+     color: #262626;
+     font-size: 16px;
+     text-decoration: none;
+     font-weight: 600;
+}
+
+.header .nav_links ul li a:hover{
+     color: rgb(8, 231, 45);
+}
+
+/*=================================================
+                  Header Content
+==================================================*/
+.text_box{
+     margin-top: 5%;
+     width: 100%;
+     color: #262626;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+     z-index: 0;
+}
+.text_box h1{
+     font-size: 42px;
+     color: #444;
+     margin-bottom: 26px;
+}
+.text_box p{
+     font-size: 18px;
+     color: #262626;
+     margin: 25px 0 70px;
+}
+
+nav #menu{
+     display: none;
+}
+/*=================================================
+                 Shape Area Animation
+==================================================*/
+.shape{
+     position: relative;
+     bottom: -4rem; left:0;
+     height: 10rem; width: 100%;
+     background: url(images/shape1.png);
+     filter: drop-shadow(0 -.2rem .2rem rgba(0, 0, 0, .2));
+     animation: animate 10s linear infinite;
+     z-index: 0;
+}
+@keyframes animate{
+     0%{
+          background-position: 0rem;
+     }
+     100%{
+          background-position: 100rem;
+     }
+}
+/*=================================================
+                  About US Area
+==================================================*/
+.row{
+     margin-top: 4%;
+     display: flex;
+     justify-content: space-between;
+}
+.about_us h1{
+     margin: 50px 0 0 0;
+     text-align: center;
+}
+.about_us{
+     width: 80%;
+     margin: auto;
+     padding: 80px 0 50px;
+}
+.about_col{
+     flex-basis: 48%;
+     padding: 30px 2px;
+}
+.about_col img{
+     width: 100%;
+     border-radius: 5px;
+     box-shadow: 0 0.3rem .5rem rgba(0, 0, 0, .4);
+}
+.about_col h2{
+     padding-top: 0;
+     color: #262626;
+}
+.about_col p{
+     padding: 15px 0 25px;
+     font-size: 16px;
+     color: #444;
+}
+/*=================================================
+                 Teacher Section 
+==================================================*/
+.teacher{
+     text-align: center;
+     width: 100%;
+     height: 77vh;
+     padding: 95px 0 50px;
+     background: url(images/teachers.jfif);
+     background-position: bottom;
+     background-size: cover;
+     flex-flow: column;
+}
+.teacher h1{
+     color: #262626;
+     font-size: 25px;
+}
+.teacher p{
+     color: #444;
+     font-size: 14px;
+     margin: 10px 0 20px;
+}
+/*=================================================
+                 Gallery Slider Area
+==================================================*/
+.gallery{
+     margin: 100px auto ;
+     position: relative;
+     min-height: 100vh;
+     background: #fff;
+ }
+ .gallery_header_homepage{
+      padding-top: 88px;
+      margin: 20px auto;
+      font-size: 32px ;
+      font-weight: 500;
+      text-align: center;
+ }
+.gallery .gallery_container{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+     justify-content: center;
+     padding: 10px;
+ }
+ .gallery .gallery_container .image{
+     width: 300px;
+     height: 150px;
+     border: 10px solid #fff;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+     overflow: hidden;
+     border-radius: 5px;
+ }
+ .gallery .gallery_container .image img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     transition: .2s linear;
+ }
+ .galllery_content {
+     width: 87%;
+     text-align: end;
+     margin-top: 24px;
+ }
+ .gallery .gallery_container .image:hover img{
+     transform: scale(1.1)
+ }
+ .gallery .popup_image{
+     position: fixed;
+     top: 0;
+     left: 0;
+     background: rgba(0, 0, 0, .9);
+     width: 100%;
+     height: 100%;
+     z-index: 1000;
+     display: none;
+ }
+ .gallery .popup_image span{
+     position: absolute;
+     top: 0; right: 18px;
+     font-size: 55px;
+     font-weight: 400;
+     color: #fff;
+     cursor: pointer;
+     z-index: 100;
+ }
+ .gallery .popup_image img{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     object-fit: cover;
+     border: 5px solid #fff;
+     width: 550px;
+     border-radius: 5px;
+ }
+/*=================================================
+                 Call to Action
+==================================================*/
+.cta{
+     width: 80%;
+     margin: 110px auto 60px;
+     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(./images/Photo/edit/Day/School\ Photo\ Edit\ 12.png);
+     background-position: center;
+     background-size: cover;
+     border-radius: 10px;
+     text-align: center;
+     padding: 160px 0;
+}
+.cta h1{
+     color: #fff;
+     margin-bottom: 25px;
+}
+.cta .red_btn{
+     color: #fff;
+     border: 2px solid #fff;
+}
+.cta .red_btn:hover{
+     color: #fff;
+     border: 2px solid #262626;
+}
+
+/*=================================================
+                 Footter Area 
+==================================================*/
+
+.footer_area{
+     background: #262626;
+     width: 100%;
+     height: 60px;
+     align-items: center;
+     margin-bottom: -100px;
+}
+.footer_area h3{
+     color: #ffffff;
+     font-size: 16px;
+     text-align: center;
+     padding-top: 20px;
+}
+
+/*=================================================
+          Multipage For About Section 
+==================================================*/
+.nav_links ul li a:hover{
+     color: rgb(8, 231, 45);
+}
+.sub_header_about{
+     width: 100%;
+     height: 80vh;
+     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(images/gallery/about.png);
+     background-position: center;
+     background-size: cover;
+     text-align: center;
+     color: #fff;
+}
+.sub_header_about h1{
+     padding-top: 20%;
+     font-size: 34px;
+}
+.inner_aboutus{
+     width: 80%;
+     margin: 80px auto;
+     text-align: justify;
+}
+.inner_aboutus h1{
+     color: #181818;
+     font-size: 32px;
+     text-align: center;
+     margin-bottom: 90px;
+}
+.inner_aboutus p{
+     font-size: 16px;
+     color: #333;
+     line-height: 1.5em;
+}
+.about_us_image img {
+     width: 40%;
+     float: left;
+     margin: 0 20px 15px 0;
+     box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 20%);
+ }
+.about_col_text{
+     text-align: justify;
+}
+.about_col_text h2{
+     font-size: 28px;
+     color: #262626;
+     margin-bottom: 10px;
+}
+.about_col_text p{
+     font-size: 16px;
+     color: #333;
+     line-height: 1.5em;
+}
+.about_col_text .hero_btn{
+     margin: 15px 0;
+}
+.about_us_image2 img{
+     float: right;
+     width: 40%;
+     margin: 20px 0 10px 20px;
+     box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 20%);
+}
+
+/*============================
+  About Section Facilites
+==============================*/
+.facilities{
+     width: 78%;
+     margin: auto;
+     padding-bottom: 200px;
+     text-align: center;
+}
+.facilities_col{
+     flex-basis: 31%;
+     height: 150px;
+     background: rgba(236, 241, 241,0.9);
+     border-radius: 5px;
+     overflow: hidden;
+     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .7);
+     box-sizing: border-box;
+}
+.facilities_content{
+     padding: 20px;
+}
+.facilities_content h4{
+     color: #262626;
+     font-size: 18px;
+}
+.facilities_content p{
+     color: #333;
+     font-size: 15px;
+}
+.facilities_col:hover{
+     transform: translateY(-5px);
+}
+
+
+/*=================================================
+          Multipage For Contact Section 
+==================================================*/
+.sub_header_contact{
+     width: 100%;
+     height: 80vh;
+     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(images/gallery/12.png);
+     background-position: center;
+     background-size: cover;
+     text-align: center;
+     color: #fff;
+}
+.sub_header_contact h1{
+     padding-top: 20%;
+     font-size: 34px;
+}
+.location{
+     width: 80%;
+     margin: auto;
+     padding: 80px 0;
+}
+.location iframe{
+     width: 100%;
+     border-radius: 5px;
+}
+.contact_section{
+     width: 80%;
+     margin: auto;
+}
+.contact_col{
+     flex-basis: 48%;
+     margin: 30px 10px 80px;
+}
+.contact_col div{
+     display: flex;
+     margin-bottom: 30px;
+     align-items: center;
+}
+.contact_col div .fa-solid{
+     font-size: 24px;
+     margin: 10px;
+     margin-right: 30px;
+     color: #262626;
+} 
+.contact_col div p{
+     padding: 0;
+     color: #555;
+     font-size: 15px;
+}
+.contact_col div h5{
+     color: #333;
+     font-size: 18px;
+     margin-bottom: 3px;
+     font-weight: 500;
+}
+.contact_col input, .contact_col textarea{
+     width: 100%;
+     padding: 15px;
+     border-radius: 5px;
+     color: #262626;
+     font-size: 16px;
+     margin-bottom: 10px;
+     outline: none;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+}
+
+.contact_col .hero_btn{
+     margin-top: 10px; 
+}
+
+
+
+/*=================================================
+          Multipage For Gallery Section 
+==================================================*/
+.sub_header .letter{
+     letter-spacing: .5rem;
+}
+.container .gallery_header{
+     font-size: 32px;
+     font-weight: 600;
+     color: #181818;
+     text-align: center;
+     margin: 20px 0;
+}
+.container{
+     margin: 100px auto ;
+     position: relative;
+     min-height: 100vh;
+     background: #fff;
+ }
+ .container .image_container{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+     justify-content: center;
+     padding: 10px;
+ }
+ .container .image_container .image{
+     width: 350px;
+     height: 200px;
+     border: 10px solid #fff;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+     overflow: hidden;
+     cursor: pointer;
+ }
+ .container .image_container .image img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     transition: .2s linear;
+ }
+ .container .image_container .image:hover img{
+     transform: scale(1.1)
+ }
+ 
+ .container .popup_image{
+     position: fixed;
+     top: 0;
+     left: 0;
+     background: rgba(0, 0, 0, .9);
+     width: 100%;
+     height: 100%;
+     z-index: 1000;
+     display: none;
+ }
+ .container .popup_image span{
+     position: absolute;
+     top: 0; right: 18px;
+     font-size: 55px;
+     font-weight: 400;
+     color: #fff;
+     cursor: pointer;
+     z-index: 100;
+ }
+ .container .popup_image img{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     object-fit: cover;
+     border: 5px solid #fff;
+     width: 550px;
+     border-radius: 5px;
+ }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

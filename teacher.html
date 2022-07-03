@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required Meta Tag -->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Our Teachers</title>
+
+     <!-- Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+     <!-- Font Awesome CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <!-- CSS File -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Responsive CSS File -->
+     <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+     <!-- Header Area -->
+     <div  id="teacher"></div>
+     <section id="home" class="sub_header">
+          <nav>
+               <a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
+               <div class="nav_links" id="navLinks">
+                    <i id="menu" class="fa-solid fa-xmark xmark" onclick="hideMenu()"></i>
+                    <ul>
+                         <li><a href="index.html" class="active">Home</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="#teacher">Teachers</a></li>
+                         <li><a href="gallery.html">Gallery</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                    </ul>
+               </div>
+               <i id="menu" class="fa-solid fa-bars bar" onclick="showMenu()"></i>
+          </nav>
+          <h1>Our Expert Teachers</h1>
+     </section>
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Area -->
+     <section class="footer_area">
+          <h3>all riight reserved<sup>@</sup></h3>
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- JQuery -->
+     <script> 
+          var navLinks = document.getElementById("navLinks");
+
+          function showMenu(){
+               navLinks.style.right = "0";
+          };
+          function hideMenu(){
+               navLinks.style.right = "-200px";
+          };
+     </script>
+</body>
+</html>
